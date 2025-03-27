@@ -1,20 +1,19 @@
 // Query Selectors
+const bioWrapper = document.querySelector('.bioWrapper')
 const header = document.querySelector('.header');
 
-// Header
-let name = document.createElement('div');
-name.textContent = "JORDAN MCCOLLUM"
 
-let about = document.createElement('div');
-about.textContent = "ABOUT" 
 
-let projects = document.createElement('div');
-projects.textContent = "PROJECTS"
+// bio
+const startDate = new Date("2025-01-08")
 
-let resume = document.createElement('div');
-resume.textContent = "RESUME"; 
+const today = new Date();
+today.setHours(0,0,0,0); 
 
-header.appendChild(name); 
-header.appendChild(about); 
-header.appendChild(projects); 
-header.appendChild(resume); 
+const timeDifference = today - startDate 
+const daysCoding = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
+
+let bio = document.createElement('div');
+bio.textContent = `I have been programming for ${daysCoding} days.`;
+
+header.appendChild(bio);
