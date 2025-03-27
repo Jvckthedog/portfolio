@@ -1,6 +1,6 @@
 // Query Selectors
 const bioWrapper = document.querySelector('.bioWrapper')
-const header = document.querySelector('.header');
+const footer = document.querySelector('.footer');
 
 
 
@@ -16,4 +16,4 @@ const daysCoding = Math.floor(timeDifference / (1000 * 60 * 60 * 24))
 let bio = document.createElement('div');
 bio.textContent = `I have been programming for ${daysCoding} days.`;
 
-header.appendChild(bio);
+footer.appendChild(bio);

@@ -8,21 +8,37 @@
       "ROND" 0;
 }
 
+.header {
+    display: flex;
+    padding:10px;
+    justify-content: flex-end; 
+}
+
+.resumeButton, .portfolioButton {
+    margin-left: 10px;
+    font-weight: 900;
+}
+
 .bioWrapper {
     display: flex;            
     justify-content: center;   
     align-items: center;       
     margin: 0;
     height: 100vh;            
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .name, .career, .iAm {
-    margin: 5px;
+    margin: 7px;
+    padding-bottom: 100px;
 }
 
-.header {
+.career {
+    color: aqua;
+}
+
+.footer {
     display: flex;
     font-weight: 900;
     text-align: center;
